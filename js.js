@@ -26,7 +26,6 @@ onload = function(){
 			drawSym(this);
 		};
 
-		/* тут хотел использовать addEven.. и потом убрать его, когда определился победитель */
 	}
 	randomMove();
 
@@ -42,7 +41,6 @@ function randomMove(){
 }
 
 function drawSym(item, sym = user_sym){
-	// console.log(item);
 	if (item.hasChildNodes()) return false;
 	item.innerHTML = sym;
 	
@@ -105,7 +103,6 @@ function checkWinner(){
 	if (!winner){
 		for(var i = 0; i < 3; i++){
 
-			// alert(i);
 
 			var a1 = arr[i].innerHTML;
 			var a2 = arr[i + 3].innerHTML;
@@ -115,8 +112,6 @@ function checkWinner(){
 			var b2 = arr[i + 1].innerHTML;
 			var b3 = arr[i + 2].innerHTML;
 			
-
-			// console.log("b1 = '" + (b1) + "' b2 = '" + (b2) + "' b3 = '" + (b3) +"'");
 
 			if (a1 == user_sym && a2 == user_sym && a3 == user_sym) {
 				winner = user_sym;
@@ -167,7 +162,7 @@ function autoDrawing(){
 	do{
 		rnd = getRandomInt(arr.length);
 		el = arr[rnd];
-		// console.log(rnd);
+	
 	}while(!drawSym(el, comp_sym));
 
 	if (!ckeckFreeSpace()) {

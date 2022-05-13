@@ -3,7 +3,7 @@
     padding:0px;
 } */
 .container {
-	background: url(pic.png) no-repeat 250px 0px; /* Параметры фона */
+	background: url(pic.png) no-repeat 465px 0px; 
 	display: center;
 	height: 1480px;
 }  
@@ -106,9 +106,7 @@
 	text-shadow: 1px 2px  1px rgba(1,1,1, 0.3);
 	user-select: none;
 }
-table {
-	/*margin: 0 auto;*/
-}
+
 
 #win_block {
 	display: none;
@@ -132,7 +130,7 @@ table {
 	position: relative;
 }
 #game .table{
-	/*border: 1px solid red;*/
+
 	display: table;
 	
 	margin: 0 auto;
